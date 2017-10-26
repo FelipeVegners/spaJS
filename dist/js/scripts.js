@@ -1,11 +1,11 @@
 //Creating an array with fields
-const campos = [
+const fields = [
   document.querySelector("#data"),
   document.querySelector("#qtd"),
-  document.querySelector("#valor")
+  document.querySelector("#value")
 ];
 
-campos[0].focus();
+fields[0].focus();
 
 let tbody = document.querySelector("table tbody");
 let form = document.querySelector(".form");
@@ -15,7 +15,7 @@ form.addEventListener("submit", function() {
 
   event.preventDefault();
 
-  campos.forEach(function(campo) {
+  fields.forEach(function(campo) {
     let td = document.createElement("td");
     td.textContent = campo.value;
     tr.appendChild(td);
@@ -24,14 +24,14 @@ form.addEventListener("submit", function() {
   });
 
   let tdVolume = document.createElement("td");
-  tdVolume.textContent = campos[1].value * campos[2].value;
+  tdVolume.textContent = fields[1].value * fields[2].value;
 
   tr.appendChild(tdVolume);
 
   tbody.appendChild(tr);
 
   form.reset();
-  campos[0].focus();
+  fields[0].focus();
 });
 
 
