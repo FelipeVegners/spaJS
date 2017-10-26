@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Javascript Single Page Application (SPA)</title>
+  <meta name="description" content="DESCRIPTION">
+
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
+  <link rel="stylesheet" href="dist/css/styles.css">
+  <!--[if lt IE 9]>
+       <script src = "http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+     <![endif]-->
+</head>
+
+<body>
+  <div class="container">
+    <h1>Negociações</h1>
+    <form action="" class="form">
+
+      <div class="form-group">
+        <label for="data">Data</label>
+        <input type="date" id="data" class="form-control" required autofocus />
+        <small class="form-text text-muted">Insira a data da negociação.</small>
+      </div>
+
+      <div class="form-group">
+        <label for="qtd">Quantidade</label>
+        <input type="number" min="1" step="1" id="qtd" class="form-control" value="0.0" required>
+        <small class="form-text text-muted">Insira a quantidade negociada.</small>
+      </div>
+
+      <div class="form-group">
+        <label for="valor">Valor</label>
+        <input type="number" id="valor" class="form-control" min="0.01" step="0.01" value="0.0" required>
+        <small class="form-text text-muted">Insira o valor negociado.</small>
+      </div>
+
+      <button type="submit" class="btn btn-primary">Inserir</button>
+
+    </form>
+
+    <br/>
+
+    <div class="btnBar">
+      <button id="import" class="btn btn-primary">Importar negociações</button>
+      <button id="remover" class="btn btn-danger disabled">Apagar</button>
+    </div>
+
+    <br/>
+    <br/>
+
+    <table class="table table-hover">
+      <thead>
+        <tr>
+          <th scope="col">Data</th>
+          <th scope="col">Quantidade</th>
+          <th scope="col">Valor</th>
+          <th scope="col">Volume</th>
+        </tr>
+        <tbody id="tabela">
+        </tbody>
+      </thead>
+    </table>
+  </div>
+
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <script src="https://code.jquery.com/jquery-2.2.1.min.js"></script>
+  <script src="dist/js/scripts.js"></script>
+</body>
+
+</html>
