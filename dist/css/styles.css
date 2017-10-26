@@ -1,0 +1,22 @@
+
+body {
+  margin: 0;
+  paddgin: 0;
+  box-sizing: border-box;
+  background: whitesmoke;
+}
+
+h1 {
+  margin: 1em 0 1em 0;
+  text-align: center;
+  font: bold 3em/1 'Roboto Slab';
+}
+
+label {
+  font: bold 1em/1 'Roboto Slab';
+  margin-bottom: 0.8em;
+}
+
+.btnBar {
+  text-align: center;
+}
