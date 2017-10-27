@@ -1,3 +1,4 @@
 # SPA w/ JS (ES6)
-Some tests of a SPA using ES6.
-See the [Demo here](http://www.vegners.com/projects/spaJS)
+Some tests of a SPA using ES6 loop and consuming json from an api.
+<br/>
+Please, check <a href="http://www.vegners.com/projects/spaJS" target="_blank">Demo here.</a>
