@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>Javascript Single Page Application (SPA)</title>
+  <title>Javascript (ES6) Single Page Application (SPA)</title>
   <meta name="description" content="DESCRIPTION">
 
   <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
@@ -17,36 +17,36 @@
 
 <body>
   <div class="container">
-    <h1>Negociações</h1>
+    <h1>Negotiations</h1>
     <form action="" class="form">
 
       <div class="form-group">
-        <label for="data">Data</label>
+        <label for="data">Date</label>
         <input type="date" id="data" class="form-control" required autofocus />
-        <small class="form-text text-muted">Insira a data da negociação.</small>
+        <small class="form-text text-muted">Insert the negotiation date.</small>
       </div>
 
       <div class="form-group">
-        <label for="qtd">Quantidade</label>
+        <label for="qtd">Quantity</label>
         <input type="number" min="1" step="1" id="qtd" class="form-control" value="0.0" required>
-        <small class="form-text text-muted">Insira a quantidade negociada.</small>
+        <small class="form-text text-muted">Insert the negotiated quantity.</small>
       </div>
 
       <div class="form-group">
-        <label for="value">Valor</label>
+        <label for="value">Amout</label>
         <input type="number" id="value" class="form-control" min="0.01" step="0.01" value="0.0" required>
-        <small class="form-text text-muted">Insira o valor negociado.</small>
+        <small class="form-text text-muted">Insert the price.</small>
       </div>
 
-      <button type="submit" class="btn btn-primary">Inserir</button>
+      <button type="submit" class="btn btn-primary">Insert</button>
 
     </form>
 
     <br/>
 
     <div class="btnBar">
-      <button id="import" class="btn btn-primary">Importar negociações</button>
-      <button id="remover" class="btn btn-danger disabled">Apagar</button>
+      <button id="import" class="btn btn-primary">Import Data</button>
+      <button id="remover" class="btn btn-danger disabled">Delete</button>
     </div>
 
     <br/>
@@ -55,10 +55,10 @@
     <table class="table table-hover">
       <thead>
         <tr>
-          <th scope="col">Data</th>
-          <th scope="col">Quantidade</th>
-          <th scope="col">Valor</th>
-          <th scope="col">Volume</th>
+          <th scope="col">Date</th>
+          <th scope="col">Quantity</th>
+          <th scope="col">Amount</th>
+          <th scope="col">Total</th>
         </tr>
         <tbody id="tabela">
         </tbody>
